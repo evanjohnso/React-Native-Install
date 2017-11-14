@@ -72,7 +72,7 @@ The _echo_ path above will be your unique path to the Android Sdk. Lets carry on
 react-native run-android
 ```
 
-put some ![Coffee](screenshots/coffee.png?raw=true) on, it might take a minute
+put some ![Coffee](screenshots/coffee.jpg?raw=true) on, it might take a minute
 
 #### This next error might occur
 ***
