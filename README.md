@@ -1,16 +1,12 @@
 # React-Native-Install
 
-<<<<<<< HEAD
 A summary of the **successful** steps to installing React Native on Linux Mint and Mac OSX. It was a fantastic mix of very exciting and massively frustrating. The online open source community has been invaluable to me throughout my coding journey, and this is my attempt to give back. I hope it helps someone out!
-
-=======
-A summary of the **successful** steps installing React Native on Linux Mint and Mac OSX. It was a fantastic mix of exciting and massively frustrating. The online open source community has been invaluable to me throughout my coding journey, and this is my attempt to give back. I hope it helps someone out in the future.
->>>>>>> 6db1845... Update README.md
 
 #### Core Versions
 * React Native 0.49
 * Watchman 4.9.0
 * Android Studio 2.3.2
+
 
 Attracted by the apparently effortless installation process on the documentation, I decided to give React Native a shot.
 I was initially drawn to create-react-native-app (CRNA) as it seems to be reducing the time to start coding. I couldn't have been more wrong. At first I was able to get an app up and running combined with Expo in less than 30 minutes. After that, nothing worked well. I ran into issues with trying to run my app on an Android emulator and debugging was turning into a nightmare. Nevertheless, I decided to take a step back and use the classic react-cli.
@@ -89,11 +85,12 @@ emulator-5554  device
 If this is offline, or nothing shows up, check to make sure the emulator is still running.
 For me it was resolved by sifting through this issue:
 https://github.com/facebook/react-native/issues/11413
-For Unix:
+For Unix
 ```
 brew cask install android-platform-tools
 ```
-Or for Linux, in your project directory:
+
+For Linux, in your project directory:
 ```
 sudo apt-get update
 sudo apt-get install adb
