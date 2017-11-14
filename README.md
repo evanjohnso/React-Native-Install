@@ -1,6 +1,7 @@
 # React-Native-Install
 
-A summary of the **successful** steps installing React Native on Linux Mint and Mac OSX. It took me the better part of two days. New to web and mobile development, this is the longest I've spent hanging around in bash. It was a fantastic mix of being very exciting and massively frustrating. The online open source community has been invalualbe to me throughout my coding journey, and this is my attempt to give back. I hope it helps someone out in the future.
+A summary of the **successful** steps to installing React Native on Linux Mint and Mac OSX. It was a fantastic mix of very exciting and massively frustrating. The online open source community has been invaluable to me throughout my coding journey, and this is my attempt to give back. I hope it helps someone out!
+
 
 React Native 0.49
 Watchman 4.9.0
