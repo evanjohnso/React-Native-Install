@@ -24,7 +24,7 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 ```
 
-The first line above should be customized. **Please make sure you use the correct Android SDK path.** You can find the actual location of the SDK in the Android Studio "Preferences" dialog, under Appearance & Behavior → System Settings → Android SDK.
+The first line above should be customized. *Please make sure you use the correct Android SDK path.* You can find the actual location of the SDK in the Android Studio "Preferences" dialog, under Appearance & Behavior → System Settings → Android SDK.
 
 * Next, save the updated .bash_profile `source .bash_profile`
 
@@ -68,7 +68,7 @@ The _echo_ path above will be your unique path to the Android Sdk. Lets carry on
 react-native run-android
 ```
 
-put some ![Coffee](screenshots/coffee.jpg?raw=true) on, it might take a minute
+put some coffee on, it might take a minute..
 
 #### This next error might occur
 ***
@@ -85,12 +85,12 @@ emulator-5554  device
 If this is offline, or nothing shows up, check to make sure the emulator is still running.
 For me it was resolved by sifting through this issue:
 https://github.com/facebook/react-native/issues/11413
-For Unix
+##### For Unix
 ```
 brew cask install android-platform-tools
 ```
 
-For Linux, in your project directory:
+##### For Linux, in your project directory:
 ```
 sudo apt-get update
 sudo apt-get install adb
@@ -101,26 +101,23 @@ Awesome once that is done, run it again
 
 Should work now!
 
+#### Extra linux issues
 
-Extra linux issues
+Installing watchman
 
-Install watchman!
-
-This works except checkout to 4.9.0 as that is the most stable release
+The blow link should work for you except checkout to **4.9.0** as that is the most stable release
 https://medium.com/@vonchristian/how-to-setup-watchman-on-ubuntu-16-04-53196cc0227c
 
-Offical documentation:
-https://facebook.github.io/watchman/docs/install.html
-
-If you get an error about:
+#### If you get an error about:
+___
 ERROR  A non-recoverable condition has triggered.  Watchman needs your help!
 The triggering condition was at timestamp=1444001279: inotify-add-watch(/home/oren/projects/react-native/HackerNews-React-Native/node_modules/react-native/node_modules/yeoman-generator/node_modules/download/node_modules/caw/node_modules/get-proxy/node_modules/rc/node_modules/.bin) -> The user limit on the total number of inotify watches was reached; increase the fs.inotify.max_user_watches sysctl
 All requests will continue to fail with this message until you resolve
 the underlying problem.  You will find more information on fixing this at
-
 https://facebook.github.io/watchman/docs/troubleshooting.html#poison-inotify-add-watch
 
-For me, on my Linux machine, this post was the fix:
-https://unix.stackexchange.com/questions/13751/kernel-inotify-watch-limit-reached
+* You have to increase the amount of files watchman is tracking. It's a bit different for each machine, but this post led me to the solution https://unix.stackexchange.com/questions/13751/kernel-inotify-watch-limit-reached
+* Offical documentation: https://facebook.github.io/watchman/docs/install.html
 
-Make sure you upgrade the amount of inotify watches, as in the second half of this post.
+
+I hope this helps someone out there in the world! Have fun
